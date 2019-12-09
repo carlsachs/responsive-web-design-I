@@ -152,7 +152,6 @@ html {
 nav {
 	top: 0;
 	width: 100vw;
-	position: fixed;
 	min-width: 990px;
 	background: #E9E9E9;
 	justify-content: center;
@@ -214,7 +213,7 @@ title {
 	#iod-left {
 		display:flex;
 		flex-direction: column;
-		margin-left: 18%
+		margin-left: 16%
 	}
 	#iod-right {
 		display:none;
@@ -256,5 +255,81 @@ title {
 	}
 	#contact {
 		margin-left: 5%;
+	}
+}
+@media all and (max-width: 500px) {
+	body {
+		width: 500px;
+		height:100%;
+		padding: 5px 1%;
+	}
+	.top {
+		display:flex;
+		justify-content: center;
+	}
+	header nav{
+		width: 500px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	header nav a {
+		display: flex;
+		margin-left: 22%;
+	}
+	#innovation-on-demand {
+		display:flex;
+		margin-left: -16%;
+	}
+	#innovation-on-demand #iod-left {
+		display:flex;
+		width: 500px;
+		flex-direction: column;
+	}
+	#feature-about {
+		display: flex;
+		flex-flow: column;
+		width: 100%;
+	}
+	#feature-about #fa-left {
+		padding-bottom: 40px;
+		padding-left: 10px;
+	}
+	#feature-about #fa-right {
+		margin-left: -1.8%;
+	}
+	.middle-img {
+		width: 500px;
+		display: flex;
+		margin-left: 2%;
+		padding-right: 10px;
+		justify-content: center;
+	}
+	#service-product-vision {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	#service-product-vision #spv-left {
+		width: 40%;
+		margin-left: -2%;
+		padding-bottom: 20px;
+	}
+	#service-product-vision #spv-middle {
+		width: 40%;
+		margin-left: -4.5%;
+		padding-bottom: 20px;
+	}
+	#service-product-vision #spv-right {
+		width: 40%;
+		margin-left: -4.5%;
+		padding-bottom: 20px;
+	}
+	footer #contact{
+		flex-direction: column;
+	}
+	footer p {
+		display:flex;
+		margin-left: 10%;
 	}
 }
